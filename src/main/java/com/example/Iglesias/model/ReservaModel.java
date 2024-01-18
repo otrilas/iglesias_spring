@@ -24,6 +24,9 @@ public class ReservaModel {
     @Column
     private  Integer id_cliente;
 
+    @Column
+    private Integer id_acontecimiento_social;
+
     public Long getId() {
         return id;
     }
@@ -44,6 +47,10 @@ public class ReservaModel {
         return id_cliente;
     }
 
+    public Integer getId_acontecimiento_social() {
+        return id_acontecimiento_social;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -62,5 +69,9 @@ public class ReservaModel {
 
     public void setId_cliente(Integer id_cliente) {
         this.id_cliente = id_cliente;
+    }
+
+    public void setId_acontecimiento_social(Integer id_acontecimiento_social) {
+        this.id_acontecimiento_social = id_acontecimiento_social;
     }
 }
